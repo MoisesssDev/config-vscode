@@ -1,9 +1,7 @@
 {
-    "workbench.iconTheme": "icons",
     "editor.tabSize": 2,
     
     "editor.fontFamily": "Fira Code Retina",
-    "editor.fontSize": 14,
     "github.copilot.enable": {
         "*": true,
         "plaintext": false,
@@ -11,8 +9,10 @@
         "scminput": false
     },
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Bearded Theme feat. Will",
     "github.copilot.editor.enableAutoCompletions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.extensionsPath": [],
+    "emmet.includeLanguages": {"erb":"html"},
 
     "vim.insertModeKeyBindings": [
         {
@@ -26,5 +26,33 @@
     "<C-w>": false,
     "<C-b>": false,
     "<C-f": false
-    }
+    },
+    "rubyLsp.formatter": "rubocop",
+    "[erb]": {},
+    "files.associations": {
+        "*.heex": "phoenix-heex",
+        "*.erb": "ruby"
+    },
+
+    // Elixir and Phoenix preferences
+    "elixirLS.suggestSpecs": false,
+    "elixirLS.dialyzerEnabled": true,
+    "elixirLS.signatureAfterComplete": false,
+    "elixirLS.fetchDeps": false,
+
+    "[elixir]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+
+    "[phoenix-heex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    },
+    "workbench.colorTheme": "Vesper",
+    "workbench.iconTheme": "symbols",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "workbench.editor.empty.hint": "hidden",
 }
